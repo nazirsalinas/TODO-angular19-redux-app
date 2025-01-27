@@ -7,11 +7,9 @@ import { provideClientHydration, withEventReplay } from '@angular/platform-brows
 import { provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
-import { contadorReducer } from './contador/contador.reducer';
-import { environment } from '../../environments/environment';
-import { todoReducer } from './todos/todo-reducers';
-import { filtroReducer } from './filtro/filtro.reducer';
+
 import { appReducers } from './app.reducer';
+import { environment } from '../environments/environment';
 
 export const appConfig: ApplicationConfig = {
   providers: [
